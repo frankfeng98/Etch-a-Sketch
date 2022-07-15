@@ -2,24 +2,45 @@
     --grid-cols: 1;
     --grid-rows: 1;
 }
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   
 .container {
     display: grid;
     grid-gap: 0em;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    margin: auto auto;
-    width: 50%;
+    border: thick solid black;
+    width: 800px;
+    height: 800px;
 }
   
 .grid-item {
-    padding: 1em;
     border: 1px solid #ddd;
     text-align: center;
 }
 
 .color{
-    color: black;
-    border-color: black;
-    background-color: black;
+    color: aqua;
+    border-color: aqua;
+    background-color: aqua;
+}
+
+#popup{
+    margin: 2rem 50rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#title{
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: teal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
